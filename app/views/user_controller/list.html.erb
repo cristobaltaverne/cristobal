@@ -1,0 +1,19 @@
+
+<p id="notice"><%= @notice %></p>
+
+<h1>Controlador</h1>
+<p><%= @users %><p>
+<table>
+	<tr>
+		<td>nombre </td>
+		<td>email </td>
+	</tr>
+	<% @users.each do |user|%>
+	<tr>
+		<td><%= user.nombre %></td>
+		<td><%= user.email %></td>
+	</tr>
+	<% end%>
+</table>
+<%= link_to "Crear nuevo", controller:"user_controller", action: "create" %>
+
