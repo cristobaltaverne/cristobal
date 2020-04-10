@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "controlador#hola"
   resources :posts
   get 'hola', to: 'controlador#hola'
   get 'cuadrado', to: 'controlador#cuadrado'

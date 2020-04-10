@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #B00100">
+<style>
+  .clase {
+    color: #ff3510;
+  }
+  .a-primary{
+    color: #999999;
+  }
+
+</style>
+
+<h1 class="clase" >encabezado</h1>
+<%= link_to "Crear nuevo", controller:"user_controller", action: "create", class:"a-primary"%>
+<%= link_to "lista", controller:"user_controller", action: "list" %>
+</body>
+</html>
